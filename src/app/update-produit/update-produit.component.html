@@ -1,0 +1,48 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Update Produit </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+
+        <div class="form-group">
+            <label>Libelle</label>
+            <input type="text" class ="form-control" id = "libelle"
+                [(ngModel)] = "produit.libelle" name = "libelle">
+        </div>
+       
+        <div class="form-group">
+            <label>Description</label>
+            <input type="text" class ="form-control" id = "description"
+                [(ngModel)] = "produit.description" name = "description">
+        </div>
+    
+        <div class="form-group">
+            <label>Prix</label>
+            <input type="text" class ="form-control" id = "prix"
+                [(ngModel)] = "produit.prix" name = "prix">
+        </div>
+        <div class="form-group">
+            <label>  Status</label>
+            <input type="text" class ="form-control" id = "status"
+                [(ngModel)] = "produit.status" name = "status">
+        </div>
+    
+        <div class="form-group">
+            <label>quantite</label>
+            <input type="text" class ="form-control" id = "quantite"
+                [(ngModel)] = "produit.quantite" name = "quantite">
+        </div>
+
+        <div class="form-group">
+            <label>taux_tva</label>
+            <input type="text" class ="form-control" id = "taux_tva"
+                [(ngModel)] = "produit.taux_tva" name = "taux_tva">
+        </div>
+
+
+
+       
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 
